@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, .font-cinzel {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+@keyframes pulse-red {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(220, 38, 38, 0.4), inset 0 0 20px rgba(220, 38, 38, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(220, 38, 38, 0.8), inset 0 0 30px rgba(220, 38, 38, 0.4);
+  }
+}
+
+@keyframes fog-drift {
+  0% {
+    transform: translateX(-5%) translateY(0);
+  }
+  50% {
+    transform: translateX(5%) translateY(-10px);
+  }
+  100% {
+    transform: translateX(-5%) translateY(0);
+  }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  41.99% { opacity: 1; }
+  42% { opacity: 0.3; }
+  43% { opacity: 1; }
+  45.99% { opacity: 1; }
+  46% { opacity: 0.4; }
+  47% { opacity: 1; }
+  85.99% { opacity: 1; }
+  86% { opacity: 0.6; }
+  87% { opacity: 1; }
+}
+
+.animate-pulse-red {
+  animation: pulse-red 3s infinite ease-in-out;
+}
+
+.animate-fog {
+  animation: fog-drift 18s ease-in-out infinite alternate;
+}
+
+.animate-flicker {
+  animation: flicker 6s infinite;
+}
+
+.text-glow-red {
+  text-shadow: 0 0 12px rgba(239, 68, 68, 0.8), 0 0 30px rgba(220, 38, 38, 0.6);
+}
+
+.text-glow-white {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(circle at center, transparent 30%, rgba(5, 5, 5, 0.85) 75%, rgba(0, 0, 0, 0.98) 100%);
+}
+

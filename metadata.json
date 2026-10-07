@@ -1,0 +1,8 @@
+{
+  "name": "QUEST 13 - Хоррор Квесты в Ташкенте",
+  "description": "Официальный сайт хоррор-перформанса QUEST 13 в Ташкенте. 700м² ужаса, 4 уникальных сценария, логические загадки, профессиональные актёры.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
